@@ -25,13 +25,9 @@ override_dh_install:
 	find debian/tmp -name '*.la' -delete
 	dh_install --sourcedir=debian/tmp
 
-override_dh_missing:
-	dh_missing --fail-missing
-
 override_dh_strip:
 	dh_strip -p$(PACKAGE) --dbgsym-migration='libice6-dbg (<< 2:1.0.10-1~)'
 	dh_strip -N$(PACKAGE)
 
 override_dh_makeshlibs:
 	dh_makeshlibs -a -V'$(PACKAGE) (>= 1:1.0.0)'
-
