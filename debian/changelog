@@ -1,3 +1,31 @@
+libice (2:1.1.1-1) unstable; urgency=medium
+
+  [ Timo Aaltonen ]
+  * Update README.source.
+  * watch: Update upstream git url.
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Bump debhelper from old 12 to 13.
+    + debian/rules: Drop --fail-missing argument to dh_missing, which is now the
+      default.
+  * Update standards version to 4.6.1, no changes needed.
+  * Remove constraints unnecessary since buster (oldstable):
+    + Build-Depends: Drop versioned constraint on xtrans-dev (>= 1.0.1).
+    + Build-Depends: Drop versioned constraint on xutils-dev (>= 1:7.6+2).
+    + Build-Depends-Indep: Drop versioned constraint on xmlto (>= 0.0.22).
+    + Build-Depends-Indep: Drop versioned constraint on xorg-sgml-doctools (>=
+      1:1.8).
+    + libice-doc: Drop conflict with removed package libice-dev (<< 2:1.0.8) in
+      Replaces.
+    + libice-doc: Drop conflict with removed package libice-dev (<< 2:1.0.8) in
+      Breaks.
+
+  [ Julien Cristau ]
+  * New upstream release.
+
+ -- Julien Cristau <jcristau@debian.org>  Thu, 31 Oct 2024 16:52:13 +0100
+
 libice (2:1.0.10-1) unstable; urgency=medium
 
   * New upstream selease.
