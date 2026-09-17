@@ -1,9 +1,3 @@
-libice (2:1.1.1-2) unstable; urgency=medium
-
-  * Rebuild with LTO enabled (dpkg vendor feature optimize/lto).
-
- -- tunaichao <tunaichao@uniontech.com>  Fri, 11 Sep 2026 16:03:17 +0800
-
 libice (2:1.1.1-1) unstable; urgency=medium
 
   [ Timo Aaltonen ]
